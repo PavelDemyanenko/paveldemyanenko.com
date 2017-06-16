@@ -1,17 +1,18 @@
 {
   "parserOptions": {
-      "ecmaVersion": 7,
-      "sourceType": "module",
-      "ecmaFeatures": {
-          "jsx": true,
-      }
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "plugins": [
     "react"
   ],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
-    "comma-dangle" : 0
+    "comma-dangle": 0,
+    "no-console": 0
   },
   "settings": {
     "react": {
@@ -19,4 +20,8 @@
       "version": "0.14.8"
     }
   },
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }
